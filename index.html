@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mdb.css">
+    <link rel="stylesheet" href="typing.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header text-center">
+        <h1>Typing App</h1>
+    </header>
+
+    <div class=" container-fluid">
+        <div class="row">
+            <div class=" col-md-9 mt-3 col-lg-9 cl-md-12 col-sm-12">
+                <div class="card t-card">
+                    <div class=" card-body">
+                      <section class="side-1-section">
+                        <section class=" text-section">
+                            <div class=" tet-section-div">
+                                 <p id="original-text">Thank you for learning MERN Stack course</p>
+                            </div>
+                        </section>
+                        <br>
+                        <section class="text-area-section ">
+                            <div class="tet-area-div ">
+                                <textarea onpaste="return false" id="text-area" rows="4" cols="53" placeholder="The clock Start When you are typing..." class="col-md-9 col-sm-9"></textarea>
+                            </div>
+                        </section>
+                        <br>
+                        <section class=" result-section text-center">
+                            <div class="result-section-div">
+                                <span class="timer" >
+                                    <span id="minutes">00</span>:
+                                    <span id="seconds">00</span> :
+                                    <span id="m-seconds">00</span>
+                                </span>
+                                   <div>
+                                       <button type="button" id="reset">Reset</button>
+                                   </div>
+                            </div>
+                        </section>
+                        <section class="cong-section">
+                            <div class="cong-section-div">
+                                <h3 style="display: none;" id="congo">Congratulations &#128525;</h3>
+                            </div>
+                            <audio id="claps">
+                                <source src="clap.wav" type="audio/wav">
+                            </audio>
+                        </section>
+                     </section>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-3 mt-4 ">
+                <section class="side-2-section  col-md-12 col-sm-12 mx-3">
+                    <button class="btn btn-primary  mt-2 rounded-pill" onclick="changeText(0) " >Lesson 1</button>
+                    <button class="btn btn-secondary  mt-2 rounded-pill" onclick="changeText(1)">Lesson 2</button>
+                    <button class="btn btn-success mt-2 rounded-pill" onclick="changeText(2)">Lesson 3</button>
+                    <button class="btn btn-danger mt-2 rounded-pill" onclick="changeText(3)">Lesson 4</button>
+                    <button class="btn btn-indigo mt-2 rounded-pill" onclick="changeText(4)">Lesson 5</button>
+                    <button class="btn btn-info mt-2 
+                    rounded-pill" onclick="changeText(5)">Lesson 6</button>
+                    <button class="btn btn-dark  mt-2 
+                    rounded-pill" onclick="changeText(6)">Lesson 7</button>
+                    <button class="btn btn-dark-green  mt-2
+                    rounded-pill" onclick="changeText(7)">Lesson 8</button>
+                    <button class="btn btn-primary mt-2
+                    rounded-pill" onclick="changeText(8)">Lesson 9</button>
+                    <button class="btn btn-secondary mt-2
+                    rounded-pill" onclick="changeText(9)">Lesson 10</button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>Copyrights &copy;2021 </h3>
+        <p>All Rights are Reserved</p>
+        <small>Developed & Maintained by Nihar&#128527;</small>
+    </footer>
+    <script src="typing.js"></script>
+</body>
+</html>
